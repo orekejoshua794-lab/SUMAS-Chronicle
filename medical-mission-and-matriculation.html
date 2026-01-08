@@ -43,12 +43,14 @@
             margin-bottom: 20px;
         }
 
+        /* Updated CSS for sharp, responsive images */
         .news-image {
-            width: 100%;
-            max-width: 800px;
-            display: block;
-            margin: 20px auto;
-            border-radius: 8px;
+            width: 100%;           /* scales to container width */
+            max-width: 800px;      /* never larger than 800px */
+            height: auto;          /* preserves aspect ratio */
+            display: block;        /* allows centering */
+            margin: 20px auto;     /* centers image with space above/below */
+            border-radius: 8px;    /* rounded corners */
         }
 
         ul {
@@ -72,8 +74,10 @@
     <p class="date">Published by Naija University Chronicle | January 2026</p>
 
     <!-- Medical Mission Image -->
-    <img src="https://i.postimg.cc/nstVJVk1/b30f19b5-8719-4744-acb3-cbe3fdd726dd.jpg" 
-         alt="SUMAS Free Medical Mission" class="news-image">
+    <a href="https://postimg.cc/nstVJVk1" target="_blank">
+        <img src="https://i.postimg.cc/nstVJVk1/b30f19b5-8719-4744-acb3-cbe3fdd726dd.jpg" 
+             alt="SUMAS Free Medical Mission" class="news-image" border="0">
+    </a>
 
     <p>
         The State University of Medical and Applied Sciences (SUMAS), Igbo-Eno, Enugu State,
